@@ -15,8 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Pokemon Godot"
-run/main_scene="res://SceneManager.tscn"
+config/name="Pokemon: The Game"
+run/main_scene="res://Menus/MainMenu.tscn"
 
 [autoload]
 

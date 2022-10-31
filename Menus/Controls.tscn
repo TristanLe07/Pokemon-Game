@@ -1,0 +1,266 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Font/Pokemon Font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Font/PixelRPG.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Buttons/ButtonNormal.tres" type="StyleBox" id=3]
+[ext_resource path="res://Buttons/ButtonHover.tres" type="StyleBox" id=4]
+[ext_resource path="res://Buttons/ButtonPressed.tres" type="StyleBox" id=5]
+[ext_resource path="res://Menus/Controls.gd" type="Script" id=6]
+
+[sub_resource type="Theme" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 12
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[node name="Controls" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 240.0
+margin_bottom = 160.0
+color = Color( 0.568627, 0.87451, 0.780392, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+margin_right = 240.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 1 )
+text = "Controls"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Boxes" type="Node" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Boxes"]
+margin_left = 8.0
+margin_top = 48.0
+margin_right = 56.0
+margin_bottom = 64.0
+theme = SubResource( 2 )
+color = Color( 0.423529, 0.423529, 0.423529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Boxes"]
+margin_left = 24.0
+margin_top = 72.0
+margin_right = 40.0
+margin_bottom = 88.0
+theme = SubResource( 2 )
+color = Color( 0.423529, 0.423529, 0.423529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="Boxes"]
+margin_left = 8.0
+margin_top = 88.0
+margin_right = 56.0
+margin_bottom = 104.0
+theme = SubResource( 2 )
+color = Color( 0.423529, 0.423529, 0.423529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="ColorRect" parent="Boxes"]
+margin_left = 24.0
+margin_top = 112.0
+margin_right = 40.0
+margin_bottom = 128.0
+theme = SubResource( 2 )
+color = Color( 0.423529, 0.423529, 0.423529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect5" type="ColorRect" parent="Boxes"]
+margin_left = 24.0
+margin_top = 136.0
+margin_right = 40.0
+margin_bottom = 152.0
+theme = SubResource( 2 )
+color = Color( 0.423529, 0.423529, 0.423529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Keybinds" type="Node" parent="."]
+
+[node name="Enter" type="Label" parent="Keybinds"]
+margin_left = 8.0
+margin_top = 48.0
+margin_right = 56.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 1 )
+text = "Enter"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="W" type="Label" parent="Keybinds"]
+margin_left = 24.0
+margin_top = 72.0
+margin_right = 40.0
+margin_bottom = 88.0
+custom_fonts/font = SubResource( 1 )
+text = "W"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A" type="Label" parent="Keybinds"]
+margin_left = 8.0
+margin_top = 88.0
+margin_right = 24.0
+margin_bottom = 104.0
+custom_fonts/font = SubResource( 1 )
+text = "A"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="S" type="Label" parent="Keybinds"]
+margin_left = 24.0
+margin_top = 88.0
+margin_right = 40.0
+margin_bottom = 104.0
+custom_fonts/font = SubResource( 1 )
+text = "S"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="D" type="Label" parent="Keybinds"]
+margin_left = 40.0
+margin_top = 88.0
+margin_right = 56.0
+margin_bottom = 104.0
+custom_fonts/font = SubResource( 1 )
+text = "D"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Z" type="Label" parent="Keybinds"]
+margin_left = 24.0
+margin_top = 112.0
+margin_right = 40.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 1 )
+text = "Z"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="X" type="Label" parent="Keybinds"]
+margin_left = 24.0
+margin_top = 136.0
+margin_right = 40.0
+margin_bottom = 152.0
+custom_fonts/font = SubResource( 1 )
+text = "X"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KeybindTriggers" type="Node" parent="."]
+
+[node name="PartyBox" type="Label" parent="KeybindTriggers"]
+margin_left = 160.0
+margin_top = 48.0
+margin_right = 232.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 1 )
+text = "Party Box"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Movement" type="Label" parent="KeybindTriggers"]
+margin_left = 160.0
+margin_top = 80.0
+margin_right = 232.0
+margin_bottom = 96.0
+custom_fonts/font = SubResource( 1 )
+text = "Movement"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Select" type="Label" parent="KeybindTriggers"]
+margin_left = 160.0
+margin_top = 112.0
+margin_right = 232.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 1 )
+text = "Select"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit" type="Label" parent="KeybindTriggers"]
+margin_left = 160.0
+margin_top = 136.0
+margin_right = 232.0
+margin_bottom = 152.0
+custom_fonts/font = SubResource( 1 )
+text = "Exit"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitBtn" type="Button" parent="."]
+margin_left = 208.0
+margin_top = 8.0
+margin_right = 232.0
+margin_bottom = 32.0
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/normal = ExtResource( 3 )
+custom_fonts/font = SubResource( 3 )
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="ExitBtn" to="." method="_on_ExitBtn_pressed"]

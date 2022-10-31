@@ -1,0 +1,96 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Font/Pokemon Font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Font/PixelRPG.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Buttons/ButtonNormal.tres" type="StyleBox" id=3]
+[ext_resource path="res://Buttons/ButtonHover.tres" type="StyleBox" id=4]
+[ext_resource path="res://Buttons/ButtonPressed.tres" type="StyleBox" id=5]
+[ext_resource path="res://Menus/MainMenu.gd" type="Script" id=6]
+[ext_resource path="res://Assets/Images/BackGround.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 240.0
+margin_bottom = 160.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround" type="Sprite" parent="."]
+position = Vector2( 120, 80 )
+scale = Vector2( 0.136111, 0.136111 )
+texture = ExtResource( 7 )
+
+[node name="Text" type="Node" parent="."]
+
+[node name="Pokemon The Game" type="Label" parent="Text"]
+margin_right = 240.0
+margin_bottom = 80.0
+custom_fonts/font = ExtResource( 1 )
+text = "Pokemon: 
+The Game"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Buttons" type="Node" parent="."]
+
+[node name="PlayBtn" type="Button" parent="Buttons"]
+margin_left = 72.0
+margin_top = 72.0
+margin_right = 160.0
+margin_bottom = 104.0
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/normal = ExtResource( 3 )
+custom_fonts/font = SubResource( 1 )
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlsBtn" type="Button" parent="Buttons"]
+margin_left = 72.0
+margin_top = 112.0
+margin_right = 160.0
+margin_bottom = 144.0
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/normal = ExtResource( 3 )
+custom_fonts/font = SubResource( 1 )
+text = "Controls"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitBtn" type="Button" parent="Buttons"]
+margin_left = 216.0
+margin_top = 8.0
+margin_right = 232.0
+margin_bottom = 24.0
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/normal = ExtResource( 3 )
+custom_fonts/font = SubResource( 1 )
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Buttons/PlayBtn" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Buttons/ControlsBtn" to="." method="_on_ControlsBtn_pressed"]
+[connection signal="pressed" from="Buttons/ExitBtn" to="." method="_on_ExitBtn_pressed"]
