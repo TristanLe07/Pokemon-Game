@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Font/PixelRPG.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Buttons/ButtonPressed.tres" type="StyleBox" id=2]
+[ext_resource path="res://Buttons/ButtonNormal.tres" type="StyleBox" id=3]
+[ext_resource path="res://Buttons/ButtonHover.tres" type="StyleBox" id=4]
+[ext_resource path="res://Menus/Settings.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 240.0
+margin_bottom = 160.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 64.0
+margin_top = 120.0
+margin_right = 176.0
+margin_bottom = 152.0
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 2 )
+custom_styles/normal = ExtResource( 3 )
+custom_fonts/font = SubResource( 1 )
+text = "Controls"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
