@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Battles/BattleWon.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/ButtonNormal.tres" type="StyleBox" id=2]
+[ext_resource path="res://Font/PixelRPG.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 18
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="BattleWon" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+rect_scale = Vector2( 1.00473, 1.0025 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 239.0
+margin_bottom = 160.0
+color = Color( 0.968627, 1, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 240.0
+margin_bottom = 112.0
+custom_fonts/font = SubResource( 1 )
+text = "CONGRATULATIONS!
+YOU HAVE DEFEATED THE TRAINER!"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 47.7739
+margin_top = 103.74
+margin_right = 191.774
+margin_bottom = 135.74
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = SubResource( 2 )
+text = "Continue"
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
