@@ -2,7 +2,8 @@
 
 [ext_resource path="res://Menus/PauseController.gd" type="Script" id=1]
 [ext_resource path="res://MobileRPG Resources/PixelRPG.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://ButtonNormal.tres" type="StyleBox" id=3]
+[ext_resource path="res://Buttons/ButtonNormal.tres" type="StyleBox" id=3]
+
 
 [sub_resource type="DynamicFont" id=2]
 size = 12

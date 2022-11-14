@@ -13,7 +13,7 @@
 [ext_resource path="res://Assets/Pokemon/Pikachu.png" type="Texture" id=11]
 [ext_resource path="res://Assets/Pokemon/Onix.png" type="Texture" id=12]
 [ext_resource path="res://Assets/UI/Pokemon Party/exit_background_button.png" type="Texture" id=13]
-[ext_resource path="res://PokemonPartyScreen.gd" type="Script" id=14]
+[ext_resource path="res://Scripts/PokemonPartyScreen.gd" type="Script" id=14]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Idle"

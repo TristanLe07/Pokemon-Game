@@ -8,9 +8,8 @@ var player_direction = Vector2(0, 0)
 enum TransitionType { NEW_SCENE, PARTY_SCREEN, MENU_ONLY }
 var transition_type = TransitionType.NEW_SCENE
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
 
 func transition_to_party_screen():
 	$ScreenTransition/AnimationPlayer.play("FadeToBlack")

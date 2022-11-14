@@ -10,4 +10,4 @@ func _on_ExitBtn_pressed():
 
 
 func _on_ControlsBtn_pressed():
-	get_tree().change_scene("res://Menus/Controls.tscn")
+	get_tree().change_scene("res://Menus/SettingsMenu.tscn")
