@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Battles/ActionButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Battles/AttackButton1.gd" type="Script" id=2]
+[ext_resource path="res://Font/Pokemon Font.tres" type="DynamicFont" id=3]
+
+[node name="AttackButton" instance=ExtResource( 1 )]
+custom_fonts/font = ExtResource( 3 )
+text = "SWORD"
+script = ExtResource( 2 )

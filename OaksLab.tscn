@@ -5,7 +5,6 @@
 [ext_resource path="res://Assets/Buildings/pallet town/oaks_lab_interior.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Buildings/pallet town/mat.png" type="Texture" id=4]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 104 )
 
@@ -19,7 +18,7 @@ extents = Vector2( 64, 8 )
 extents = Vector2( 32, 8 )
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 24, 8 )
+extents = Vector2( 24, 10.5993 )
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 8, 16 )

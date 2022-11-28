@@ -5,7 +5,6 @@
 [ext_resource path="res://Assets/UI/ui_arrow_left_right.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Menu.gd" type="Script" id=4]
 
-
 [sub_resource type="DynamicFont" id=1]
 size = 12
 font_data = ExtResource( 2 )
